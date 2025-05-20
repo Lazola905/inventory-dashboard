@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   --table-heading-color: #130F57;
   --table-heading-bg: #3729f548;
   --table-heading-border: #3729f553;
+  --table-rows-height: 36px;
+  --table-font-size: 16px;
+  --view-heading-size: 20px;
 }
 
 *, *::before, *::after {
@@ -15,7 +20,7 @@
   width: 100vw;
 
   display: grid;
-  grid-template-columns: 160px calc(100% - 160px);
+  grid-template-columns: 200px calc(100% - 200px);
   grid-template-rows: 1fr 10fr;
 }
 
@@ -31,4 +36,14 @@ main {
   border-radius: 12px 0 0 0;
   border: .5px solid rgba(0, 0, 0, 0.116);
   box-shadow: 0 0 5px 0 #3729f511;
+}
+
+.page-headings {
+  font-size: var(--view-heading-size);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }

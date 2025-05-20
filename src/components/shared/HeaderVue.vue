@@ -14,7 +14,7 @@
 
 <style scoped>
   img {
-    height: 25px;
+    height: 32px;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 100%;
@@ -22,7 +22,7 @@
   }
 
   i {
-    font-size: 16px;
+    font-size: 20px;
     color: #3529F5;
     border-radius: 4px;
     width: 26px;

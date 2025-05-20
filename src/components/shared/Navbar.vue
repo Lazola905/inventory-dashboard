@@ -63,7 +63,7 @@
     }
 
     img {
-        height: 120px;
+        height: 140px;
     }
 
     .ul {
@@ -72,13 +72,11 @@
     }
 
     .nav-item {
-        font-size: 11px;
+        font-size: 14px;
         display: flex;
         gap: .8rem;
         align-items: center;
         padding: 6px 0 6px 8px;
-        /* border-radius: 16px; */
-        /* overflow: hidden; */
     }
 
     li {
@@ -95,7 +93,7 @@
     }
 
     i {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .router-link-active {

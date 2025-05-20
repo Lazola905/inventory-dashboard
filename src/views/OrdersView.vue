@@ -1,10 +1,10 @@
 <template>
     <span class="heading">
-        <h2 class="m-0">Orders</h2>
+        <h2 class="m-0 page-headings">Orders</h2>
         <p>{{ this.orders.length }} orders found</p>
     </span>
 
-    <ul class="tabs list-unstyled d-flex gap-3">
+    <ul class="tabs list-unstyled d-flex gap-3 mb-4">
         <li :class="{active: this.selectedTab === 'all'}" @click.prevent="fetchOrders()">All orders</li>
         <li :class="{active: this.selectedTab === 'pending'}" @click.prevent="filterByStatus('pending')">Pending</li>
         <li :class="{active: this.selectedTab === 'shipped'}" @click.prevent="filterByStatus('shipped')">Shipped</li>
@@ -59,17 +59,13 @@
 </script>
 
 <style scoped>
-    h2 {
-        font-size: 20px;
-    }
-
     p {
-        font-size: 11px;
+        font-size: 14px;
         opacity: .8
     }
 
     .tabs li {
-        font-size: 10px
+        font-size: 14px
     }
 
     .tabs li.active {
@@ -80,7 +76,7 @@
     .tabs li.active::after {
         content: "";
         position: absolute;
-        height: 1.5px;
+        height: 2px;
         width: 100%;
         background: #3529F5;
         left: 0;
